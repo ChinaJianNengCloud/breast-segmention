@@ -1,0 +1,14 @@
+experimentName: fuqiangjing
+trialConcurrency: 1
+maxExperimentDuration: 144h
+maxTrialNumber: 1000
+searchSpaceFile: 3.json
+useAnnotation: false
+trialCommand: python3 mlyinda2.py
+trialCodeDirectory: .
+tuner:
+  name: TPE
+  classArgs:
+    optimize_mode: maximize
+trainingService:
+  platform: local
